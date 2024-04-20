@@ -37,7 +37,7 @@ a {
 .btn {
   /* box chua */
   display: inline-block;
-  min-width: 205px;
+  /* min-width: 205px; */
   line-height: 60px;
   border-radius: 30px;
   background: var(--primary-color);

@@ -63,8 +63,8 @@
         </nav>
         <!-- cta action -->
         <div class="header__action">
-          <a href="#!" class="header__action--login">Log in</a>
-          <a href="#!" class="btn header__action--signup">Sign up</a>
+          <a href="/templates/index_signin.html" class="header__action--login">Log in</a>
+          <a href="/templates/index_signup.html" class="btn header__action--signup">Sign up</a>
         </div>
       </div>
     </header>
@@ -72,11 +72,10 @@
     <!-- main -->
     <main>
 
-      <!-- hero -->
-      
-
+      <!-- search-->
       <section class="search">
 
+        <!-- hero-->
         <section class="hero">
           <img
             class="hero__img "
@@ -85,9 +84,9 @@
           />
         </section>
 
+         <!-- container-->
         <div class="container">
           <div class="search__container">
-
             <div class="fromto__search">
                 <div class="from__search" onclick="showDestinations('From')">
                   <div class="name">
@@ -196,6 +195,7 @@
           </div>
         </div>
 
+        <!-- result 1-->
         <section class="result">
           <div class="container">
             <div class="result__container">
@@ -223,7 +223,112 @@
                   <p class="res__code">MH370</p>
                   <p class="res__station">Station: 0</p>
                   <p class="res__details">
-                    <button class="details">Details</button>
+                    <button class="btn__details">Details</button>
+                  </p>
+                </div>
+              </div>
+  
+              <div class="price">
+                <a href="/templates/index_booking.html">
+                  <p class="pre price__class">Prestige class</p>
+                  <p class="pre price__vnd">VND 2.500.000</p>
+                  <p class="pre price__number">17/20</p>
+                </a>
+              </div>         
+            </div>
+          </div>
+        </section>
+
+         <!-- itinerary-->
+        <section class="itinerary" style="display: none">
+          <div class="container">
+              <div class="shape">
+                  <!-- itinerary__title -->
+                  <div class="title">
+                      <h1 class="title__heading">Itinerary</h1>
+                      <div class="title__destination">
+                          <h1 class="item__abb">HAN</h1>
+                          <p class="item__full">Ha Noi</p>
+                          <div class="mid-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="130" height="18" viewBox="0 0 142 24" fill="none">
+                                <path d="M3 21H133L106.869 3" stroke="#00256C" stroke-width="5" stroke-linecap="round"/>
+                              </svg>
+                          </div>
+                          <h1 class="item__abb">HCM</h1>
+                          <p class="item__full">Ho Chi Minh</p>
+                      </div>
+                  </div>
+  
+                  <!-- itinerary__content -->
+                  <div class="content">
+                      <!-- item 1 -->
+                      <div class="item station__1">
+                          <div class="content-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="54" viewBox="0 0 384 512" fill="#00256C">
+                              <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                          </div>
+                          <div class="content__information">
+                              <h2 class="content__heading">Ha Noi</h2>
+                              <p class="content__desc">T5, 18 th04 2024, 23:10, Viet Nam</p>
+                          </div>
+                      </div>
+                      <!-- item 2 -->
+                      <div class="item station__2">
+                          <div class="content-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="54" viewBox="0 0 384 512" fill="#00256C">
+                              <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                          </div>
+                          <div class="content__information">
+                              <h2 class="content__heading">Da Nang</h2>
+                              <p class="content__desc">Stop time:  30m, Viet Nam</p>
+                          </div>
+                      </div>
+                      <!-- item 3 -->
+                      <div class="item station__3">
+                          <div class="content-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="54" viewBox="0 0 384 512" fill="#00256C">
+                              <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                          </div>
+                          <div class="content__information">
+                              <h2 class="content__heading">Ho Chi Minh</h2>
+                              <p class="content__desc">T5, 18 th04 2024, 23:10, Viet Nam</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+          </div>
+        </section>
+
+        <!-- result 2-->
+        <section class="result">
+          <div class="container">
+            <div class="result__container">
+              <div class="information">
+                <div class="fromto__result">
+                    <div class="from__result">
+                      <h1 class="res-time">7:30</h1>
+                      <p class="res-name">HCM</p>
+                    </div>
+
+                    <div class="mid__res">
+                      <p class="res__dura">1h</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="130" height="18" viewBox="0 0 142 24" fill="none">
+                        <path d="M3 21H133L106.869 3" stroke="#00256C" stroke-width="5" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+    
+                    <div class="to__result">
+                      <h1 class="res-time">10:30</h1>
+                      <p class="res-name">HNA</p>
+                    </div>
+                </div>
+
+                <div class="code">
+                  <p class="res__code">MH370</p>
+                  <p class="res__station">Station: 0</p>
+                  <p class="res__details">
+                    <button class="btn__details">Details</button>
                   </p>
                 </div>
               </div>
@@ -232,18 +337,13 @@
                 <p class="pre price__class">Prestige class</p>
                 <p class="pre price__vnd">VND 2.500.000</p>
                 <p class="pre price__number">17/20</p>
-              </div>
-  
-            
-  
-              
-  
-              
-                
+              </div>         
             </div>
           </div>
-       </section>
+        </section>
+
       </section>
+
     </main>
 
 

@@ -74,3 +74,11 @@ toElement.addEventListener('click', function() {
     fromList.style.display = 'none'; // Ẩn danh sách "From" khi click vào "To"
 });
 
+document.querySelector('.btn__details').addEventListener('click', function() {
+    var itinerary = document.querySelector('.itinerary');
+    if (itinerary.style.display === 'block') {
+      itinerary.style.display = 'none';
+    } else {
+      itinerary.style.display = 'block';
+    }
+  });

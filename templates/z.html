@@ -3,60 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travel Destination Selection</title>
-<style>
-    .destination-list {
-        display: none;
-        position: absolute;
-        background-color: white;
-        border: 1px solid black;
-        padding: 10px;
-        z-index: 1;
-    }
-</style>
+<title>Toggle Itinerary</title>
+
 </head>
 <body>
 
-<section class="fromto__search">
-    <div class="from__search" onclick="showDestinations('from')">
-        <h1 class="abb-name">From</h1>
-        <p class="full-name">Departing from</p>
+<p class="res__details">
+  <button class="btn__details">Details</button>
+</p>
+
+<section class="itinerary" >
+  <div class="container">
+    <div class="shape">
+      <!-- itinerary__title -->
+      <div class="title">
+        <h1 class="title__heading">Itinerary</h1>
+        <div class="title__destination">
+          <h1 class="item__abb">HAN</h1>
+          <p class="item__full">Ha Noi</p>
+          <div class="mid-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="130" height="18" viewBox="0 0 142 24" fill="none">
+              <path d="M3 21H133L106.869 3" stroke="#00256C" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h1 class="item__abb">HCM</h1>
+          <p class="item__full">Ho Chi Minh</p>
+        </div>
+      </div>
+
+      <!-- itinerary__content -->
+      <div class="content">
+        <!-- item 1 -->
+        <div class="item station__1">
+          <div class="content-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="54" viewBox="0 0 384 512" fill="#00256C">
+              <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+            </svg>
+          </div>
+          <div class="content__information">
+            <h2 class="content__heading">Ha Noi</h2>
+            <p class="content__desc">T5, 18 th04 2024, 23:10, Viet Nam</p>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div class="item station__2">
+          <div class="content-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="54" viewBox="0 0 384 512" fill="#00256C">
+              <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+            </svg>
+          </div>
+          <div class="content__information">
+            <h2 class="content__heading">Da Nang</h2>
+            <p class="content__desc">Stop time:  30m, Viet Nam</p>
+          </div>
+        </div>
+        <!-- item 3 -->
+        <div class="item station__3">
+          <div class="content-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="54" viewBox="0 0 384 512" fill="#00256C">
+              <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+            </svg>
+          </div>
+          <div class="content__information">
+            <h2 class="content__heading">Ho Chi Minh</h2>
+            <p class="content__desc">T5, 18 th04 2024, 23:10, Viet Nam</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="to__search" onclick="showDestinations('to')">
-        <h1 class="abb-name">To</h1>
-        <p class="full-name">Arriving at</p>
-    </div>
+  </div>
 </section>
 
-<!-- Danh sách điểm du lịch -->
-<div id="fromList" class="destination-list">
-    <a href="#" onclick="selectDestination('from', 'Ha Long Bay')">Ha Long Bay</a>
-    <a href="#" onclick="selectDestination('from', 'Sapa')">Sapa</a>
-    <a href="#" onclick="selectDestination('from', 'Da Nang')">Da Nang</a>
-    <!-- Thêm các điểm du lịch trong nước khác nếu cần -->
-</div>
-<div id="toList" class="destination-list">
-    <a href="#" onclick="selectDestination('to', 'Paris')">Paris</a>
-    <a href="#" onclick="selectDestination('to', 'Tokyo')">Tokyo</a>
-    <a href="#" onclick="selectDestination('to', 'New York')">New York</a>
-    <!-- Thêm các điểm du lịch quốc tế khác nếu cần -->
-</div>
-<!-- Kết thúc danh sách điểm du lịch -->
-
 <script>
-    // Function to show destinations when clicking on "From" or "To"
-    function showDestinations(inputId) {
-        var list = document.getElementById(inputId + 'List');
-        list.style.display = 'block';
+  document.querySelector('.details').addEventListener('click', function() {
+    var itinerary = document.querySelector('.itinerary');
+    if (itinerary.style.display === 'none') {
+      itinerary.style.display = 'block';
+    } else {
+      itinerary.style.display = 'none';
     }
-
-    // Function to select destination and update "From" or "To" field
-    function selectDestination(inputId, destination) {
-        var input = document.querySelector('.' + inputId + '__search .full-name');
-        input.textContent = destination; // Cập nhật nội dung của "From" hoặc "To" thành tên địa điểm được chọn
-        var list = document.getElementById(inputId + 'List');
-        list.style.display = 'none'; // Ẩn danh sách điểm du lịch
-    }
+  });
 </script>
 
 </body>
