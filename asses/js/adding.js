@@ -86,12 +86,13 @@ function addStation() {
     DivContainer.appendChild(DivStation);
 
     document.querySelector('#remove-' + i)
-        .addEventListener('click', function() {
+        .addEventListener('click', function(event) {
+            event.preventDefault();
             console.log(this);
             let removeE1 = this.parentNode;
             let removeE0 = removeE1.parentNode;
             console.log(removeE0)
-                //DivContainer.removeChild(removeE1);
+            DivContainer.removeChild(removeE1);
         });
 
 
