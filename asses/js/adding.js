@@ -28,7 +28,7 @@ const DivContainer = document.getElementById('container_list')
 
 
 function addStation() {
-    if (i > 4) {
+    if (i > 1) {
         alert("There are more than the number of stations required")
         dialog.close();
         return 0;
@@ -87,12 +87,12 @@ function addStation() {
 
     document.querySelector('#remove-' + i)
         .addEventListener('click', function(event) {
-            event.preventDefault();
-            console.log(this);
+
             let removeE1 = this.parentNode;
             let removeE0 = removeE1.parentNode;
             console.log(removeE0)
             DivContainer.removeChild(removeE1);
+            event.preventDefault();
         });
 
 
