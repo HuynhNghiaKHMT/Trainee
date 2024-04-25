@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Itinerary</title>
+
+</head>
+
+<body>
+
+    <button id="add_station" onclick="ShowDialog()">Dialog</button>
+    <dialog id='dialog'>
+        <div class="wrapper">
+            <form>
+                <label>Station</label>
+                <select required>
+                  <option disabled selected>Select station</option>
+                  <option>SGN</option>
+                  <option>HN</option>
+                  <option>DL</option>
+                  <option>Korea</option>
+                  <option>China</option>
+              </select>
+                <label>Duration:</label>
+                <input type="text" placeholder="Enter duration" required>
+                <label>Note:</label>
+                <input type="text" placeholder="Take note">
+
+                <button class="btn_confirm_add">Confirm</button>
+                <button class="btn_confirm_add" type="button" onclick="CloseDialog()">Cancel</button>
+
+        </div>
+
+    </dialog>
+
+
+    <script src="/asses/js/adding.js"></script>
+
+</body>
+
+</html>

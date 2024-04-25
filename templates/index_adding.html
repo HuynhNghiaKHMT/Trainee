@@ -92,11 +92,11 @@
                     </div>
                     <div class="input-field">
                         <label>Plane ID:</label>
-                        <input type="text" placeholder="Enter plane ID" required>
+                        <input type="text" placeholder="Enter plane ID"required >
                     </div>
                     <div class="input-field">
                         <label>From:</label>
-                        <select required>
+                        <select required >
                             <option disabled selected>Select station</option>
                             <option>SGN</option>
                             <option>HN</option>
@@ -118,11 +118,11 @@
                     </div>
                     <div class="input-field">
                         <label>Time-Date:</label>
-                        <input type="datetime-local" placeholder="Enter time and date" required>
+                        <input type="datetime-local" placeholder="Enter time and date"required >
                     </div>
                     <div class="input-field">
                         <label>Duration:</label>
-                        <input type="number" placeholder="Enter duration" required>
+                        <input type="text" placeholder="Enter duration" required>
                     </div>
                     <div class="input-field">
                         <label>Prestige Class Number:</label>
@@ -136,26 +136,68 @@
                     
                     <div class="input-field">
                         <label>Price:</label>
-                        <input type="number" placeholder="Enter price" required>
+                        <input type="number" placeholder="Enter price"required>
                     </div>
 
                 </div>
-            </form>
+
+                
 
             <div class="container_inter">
                 <div class="add_station_title">
+
                     <div class="inter_title">Intermediate Stations</div>
+
                     <div class="btn_sign">
-                      <button class="btn_add_sign">
+                      <button id="add_station" class="btn_add_sign" onclick="ShowDialog()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" viewBox="0 0 448 512">
                         <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" fill="currentColor"/></svg>
                       </button>
+                    </div>
+
+                      <dialog id='dialog'>
+                        <div class ="wrapper">
+                          <form>
+                            <div class= "field_add_station"> 
+                            
+                              <label class="label_station">Station</label>
+                              <select id='name_dialog' required >
+                                  <option disabled selected>Select station</option>
+                                  <option>SGN</option>
+                                  <option>HN</option>
+                                  <option>DL</option>
+                                  <option>Korea</option>
+                                  <option>China</option>
+                              </select>
+                            
+
+                            
+                              <label class="label_station">Duration:</label>
+                              <input required id='duration_dialog' class="input_station" type="number" placeholder="Enter duration" >
+                            
+                            
+                            
+                              <label class="label_station">Note:</label>
+                              <input id='note_dialog' class="input_station" type="text" placeholder="Take note">
+                            
+                             <button id="confirmAdd" onclick='InfoDialog()' class="btn_station">Confirm</button>
+                            <button class="btn_station" type="button" onclick="CloseDialog()">Cancel</button>
+                            
+                          
+                        </div>
+
+                        </form>
+                        </div>
+                      
+                      </dialog>
                       
                     </div>
                       
 
                 </div>
 
+                <div id='container_list'> 
+                  <!--
                 <div class="add_station">
                     <div class="add_planeStation">
                       <div class="air_plane">
@@ -170,7 +212,7 @@
                     </div>
 
                     <div class="btn_sign">
-                      <button class="btn_add_sign">
+                      <button id ="remove-0" class="btn_substract_sign">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" viewBox="0 0 448 512">
                         <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
                       </button>
@@ -179,7 +221,7 @@
 
                 </div>
 
-                <div class="add_station">
+                <div  class="add_station">
                     <div class="add_planeStation">
                       <div class="air_plane">
                       <img class="img_plane" src="/asses/favicon/airplane.svg"/>
@@ -193,22 +235,28 @@
                     </div>
                         
 
-                        <div class="btn_sign">
-                          <button class="btn_add_sign">
+                        <div  class="btn_sign">
+                          <button id="remove-1" class="btn_substract_sign">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" viewBox="0 0 448 512">
                             <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
                             </button>
                           
                         </div>
                 </div>
-        
+              
             </div>
+            -->
+          </div>
+          
+          
+          <div class="btn_center">
+            <button class="btn_confirm_add">Confirm</button>
+        </div> 
 
-            <div class="btn_center">
-                <button class="btn_confirm_add">Confirm</button>
-            </div> 
+        </form>
+            
     </div>
     </main>
-
+    <script src="/asses/js/adding.js"></script>
   </body>
 </html>
