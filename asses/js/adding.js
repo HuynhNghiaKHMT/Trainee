@@ -1,6 +1,6 @@
 const dialog = document.getElementById('dialog');
 const wrapper = document.querySelector('.wrapper');
-let i = 0; // dem so san bay trung gian
+var i = 0; // dem so san bay trung gian
 
 function ShowDialog() {
     dialog.showModal();
@@ -79,13 +79,13 @@ function addStation() {
 
     const DivSign = document.createElement('div');
     DivSign.classList.add('btn_sign')
-    DivSign.innerHTML = '<button id="remove" class="btn_substract_sign"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg></button>'
+    DivSign.innerHTML = '<button id="remove-' + i + '" class="btn_substract_sign" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg></button>'
     DivStation.appendChild(DivPlan);
     DivStation.appendChild(DivSign);
 
     DivContainer.appendChild(DivStation);
 
-    document.querySelector('.btn_substract_sign')
+    document.querySelector('#remove-' + i)
         .addEventListener('click', function() {
             console.log(this);
             let removeE1 = this.parentNode;
@@ -96,3 +96,16 @@ function addStation() {
 
 
 }
+
+document.getElementById('add_station').addEventListener('click',
+    function(event) {
+
+        // Handle the form data
+        event.preventDefault();
+    });
+document.getElementById('confirmAdd').addEventListener('click',
+    function(event) {
+
+        // Handle the form data
+        event.preventDefault();
+    });
