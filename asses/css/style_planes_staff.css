@@ -11,7 +11,7 @@ body {
     font-family: "Sora", sans-serif;
 }
 
- :root {
+:root {
     --font-heading: "Sora";
     --font-content: "Open Sans";
     --primary-color: #21A9DE;
@@ -283,6 +283,12 @@ a {
     line-height: 1.75;
 }
 
+
+/* bat dau chinh sua tu day*/
+
+
+/* Dinh dangj cho thanh tim kiem*/
+
 .btn_bar {
     background-color: #00256C;
     width: calc(100% / 6 - 50px);
@@ -297,7 +303,7 @@ a {
     opacity: 0.9;
 }
 
-.btn_bar:focus {
+.btn_bar:active {
     /* Lam mo nen */
     background-color: #f7f7f7;
     color: #00256C;
@@ -322,22 +328,34 @@ a {
     flex-wrap: wrap;
 }
 
-.container_bar_img {}
+.container_bar_search_input {
+    padding-left: 20px;
+}
+
+.container_bar_search_input svg {
+    margin-top: 0px;
+}
 
 h1 {
     padding: 30px;
     color: #00256C;
     font-size: 45px;
-    font-weight: bold
+    font-weight: bold;
 }
 
+
+/* dinh dang table vaf cac thanh phan ben trong*/
+
 table {
-    margin: 60px;
+    margin-left: 95px;
+    margin-top: 40px;
+    margin-bottom: 60px;
     width: 85%;
 }
 
 th {
     background-color: #a0d1ff;
+    font-size: 18px;
 }
 
 table,
@@ -358,4 +376,61 @@ td {
 
 tr:hover {
     background-color: rgb(193, 231, 234);
+}
+
+
+/* dinh dang cho thanh phan dialog va bieu mau ben trong*/
+
+dialog {
+    padding: 10px;
+}
+
+dialog .wrapper {
+    padding: 16px;
+}
+
+.field_add_station {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px 70px;
+}
+
+.label_station {
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+.input_station {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #00256C;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.btn_station {
+    background-color: #00256C;
+    color: #fff;
+    margin: 10px;
+    height: 40px;
+    border-radius: 1cm;
+}
+
+.btn_station:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    background-color: var(--header-bg)
+}
+
+.btn_station:active {
+    background-color: #fff;
+    color: #00256C;
+}
+
+.table_title {
+    text-decoration-thickness: 3px;
 }
