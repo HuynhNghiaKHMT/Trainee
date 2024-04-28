@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/asses/favicon/Logo_Img.svg"
+      type="VietHub Airline"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"/>
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- reset css -->
+    <link rel="stylesheet" href="/asses/css/reset.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="/asses/css/style_profile.css" />
+    
+    <title>VietHub Airline</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header class="header">
+      <div class="menu">
+        <!-- Logo -->
+        <a href=""
+          ><img
+            src="/asses/favicon/Logo_Gr.svg"
+            alt="Shine smile"
+            class="logo header__logo"
+        /></a>
+        <!-- Navbar  -->
+        <nav class="navbar">
+          <ul class="navbar__list" id="navbar__list--pc">
+            <li class="navbar__item">
+              <a href="/templates/index.html" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/templates/index_search.html" class="navbar__link">Search</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/templates/index_booking.html" class="navbar__link">Booking</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/templates/index.html" class="navbar__link">About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/templates/index.html" class="navbar__link">Contact</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/templates/index_adding.html" class="navbar__link">BookTicket</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- cta action -->
+        <div class="header__action">
+          <a href="/templates/index_signin.html" class="header__action--login">Log in</a>
+          <a href="/templates/index_signup.html" class="btn header__action--signup">Sign up</a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- main -->
+    <main>
+      <div class="main">
+        <div class="info">
+          <!-- hero -->
+
+          <div class="information">
+            <h1 class="information__heading">Edit Profile</h1>
+            <p class="information__require">[* is a required item.]</p>
+            <p class="information__note">Please enter your name accurately as it appears on your passport. This cannot be revised after booking is made</p>
+          </div>
+
+          <div class="passenger">
+            <div class="container">
+              <form action="#">
+                  <div class="details personal">
+                      <div class="fields">
+                        <div class="field input-field">
+                            <label>Full Name</label>
+                            <input
+                              type="text"
+                              placeholder="Full name"
+                              class="input"
+                              required
+                            />
+                          </div>
+                          <div class="field input-field">
+                            <label>ID</label>
+                              <input type="text" placeholder="Enter your ID" required>
+                          </div>
+                          <div class="field input-field">
+                            <label>Date of Birth</label>
+                              <input type="date" placeholder="Enter birth date" required>
+                          </div>
+                          <div class="field input-field">
+                            <label>Email</label>
+                            <input
+                              type="text"
+                              id="email"
+                              placeholder="Email address"
+                              class="input"
+                              required
+                            />
+                          </div>
+                          <div class="field input-field">
+                            <label>Mobile Number</label>
+                              <input type="tel" placeholder="Enter mobile number" required>
+                          </div>
+                          <div class="field input-field">
+                            <label>Gender</label>
+                              <select required>
+                                  <option disabled selected>Select gender</option>
+                                  <option>Male</option>
+                                  <option>Female</option>
+                              </select>
+                          </div>
+                          <div class="field input-field">
+                            <input
+                              type="password"
+                              placeholder="Create password"
+                              class="password"
+                              required
+                            />
+                          </div>
+              
+                          <div class="field input-field">
+                            <input
+                              type="password"
+                              placeholder="Confirm password"
+                              class="password"
+                              required
+                            />
+                            <i class="bx bx-hide eye-icon"></i>
+                          </div>   
+                          <div class="update">
+                            <button class="btn_update">
+                              Update
+                            </button>
+                          </div>
+                                                  
+                      </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+
+  </main>
+  <script src="/asses/js/profile.js"></script>
+
+  </body>
+
+</html>
