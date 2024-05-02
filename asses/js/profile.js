@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     'input[type="text"][placeholder="Enter your ID"]'
   );
   const emailInput = document.getElementById("email");
-  const mobileNumberInput = document.querySelector('input[type="tel"]');
+  const phoneNumberInput = document.querySelector('input[type="tel"]');
   const passwordInput = document.querySelector(
-    'input[type="password"][placeholder="Create password"]'
+    'input[type="password"][placeholder="New password"]'
   );
   const confirmPasswordInput = document.querySelector(
     'input[type="password"][placeholder="Confirm password"]'
@@ -38,13 +38,29 @@ document.addEventListener("DOMContentLoaded", function () {
     return true;
   }
 
-  // hàm để valid cái mobile number
-  function validateMobileNumber() {
+  // hàm để valid cái phone number
+  function validatephoneNumber() {
     // format của số điện thoại VN ó,,,, bắt đầu với +84(0)
-    const mobileNumberPattern = /^(0\d{9,10})$/;
-    if (!mobileNumberPattern.test(mobileNumberInput.value)) {
-      alert("Please enter a valid Vietnamese mobile number!");
-      mobileNumberInput.focus();
+    const phoneNumberPattern = /^(0\d{9,10})$/;
+    if (!phoneNumberPattern.test(phoneNumberInput.value)) {
+      alert("Please enter a valid Vietnamese phone number!");
+      phoneNumberInput.focus();
+      return false;
+    }
+    return true;
+  }
+
+  function validateCurrentPassword() {
+    const currentPasswordInput = document.querySelector(
+      'input[type="password"][placeholder="Curent password"]'
+    );
+    const currentPassword = currentPasswordInput.value;
+    const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+    if (!passwordPattern.test(currentPassword)) {
+      alert(
+        "Current password must be at least 6 characters long and contain both letters and numbers!"
+      );
+      currentPasswordInput.focus();
       return false;
     }
     return true;
@@ -92,7 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
       !validateFullName() ||
       !validateID() ||
       !validateEmail() ||
-      !validateMobileNumber() ||
+      !validatephoneNumber() ||
+      !validateCurrentPassword() ||
       !validatePassword() ||
       !validateConfirmPassword()
     ) {

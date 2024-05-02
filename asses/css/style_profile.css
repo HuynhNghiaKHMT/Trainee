@@ -6,13 +6,17 @@ h1 {
   position: relative;
   font-weight: 600;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
+  vertical-align: top;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
   color: #00256c;
+}
+.required {
+  color: red;
 }
 :root {
   --font-heading: "Sora";

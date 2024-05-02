@@ -78,8 +78,6 @@
 
           <div class="information">
             <h1 class="information__heading">Edit Profile</h1>
-            <p class="information__require">[* is a required item.]</p>
-            <p class="information__note">Please enter your name accurately as it appears on your passport. This cannot be revised after booking is made</p>
           </div>
 
           <div class="passenger">
@@ -88,8 +86,8 @@
                   <div class="details personal">
                       <div class="fields">
                         <div class="field input-field">
-                            <label>Full Name</label>
-                            <input
+                          <label>Full Name <span class="required">*</span> </label>                            
+                          <input
                               type="text"
                               placeholder="Full name"
                               class="input"
@@ -97,15 +95,15 @@
                             />
                           </div>
                           <div class="field input-field">
-                            <label>ID</label>
-                              <input type="text" placeholder="Enter your ID" required>
+                            <label>ID <span class="required">*</span></label>                              
+                            <input type="text" placeholder="Enter your ID" required>
                           </div>
                           <div class="field input-field">
-                            <label>Date of Birth</label>
+                            <label>Date of Birth <span class="required">*</span></label>
                               <input type="date" placeholder="Enter birth date" required>
                           </div>
                           <div class="field input-field">
-                            <label>Email</label>
+                            <label>Email <span class="required">*</span></label>
                             <input
                               type="text"
                               id="email"
@@ -115,27 +113,40 @@
                             />
                           </div>
                           <div class="field input-field">
-                            <label>Mobile Number</label>
-                              <input type="tel" placeholder="Enter mobile number" required>
+                            <label>Phone Number <span class="required">*</span></label>
+                              <input type="tel" placeholder="Enter phone number" required>
                           </div>
                           <div class="field input-field">
-                            <label>Gender</label>
+                            <label>Gender <span class="required">*</span></label>
                               <select required>
                                   <option disabled selected>Select gender</option>
                                   <option>Male</option>
                                   <option>Female</option>
                               </select>
+                              
                           </div>
                           <div class="field input-field">
+                            <label>Current Password <span class="required">*</span></label>
                             <input
                               type="password"
-                              placeholder="Create password"
+                              placeholder="Curent password"
                               class="password"
                               required
                             />
                           </div>
               
                           <div class="field input-field">
+                            <label>New Password <span class="required">*</span></label>
+                            <input
+                              type="password"
+                              placeholder="New password"
+                              class="password"
+                              required
+                            />
+                            <i class="bx bx-hide eye-icon"></i>
+                          </div>   
+                          <div class="field input-field">
+                            <label>Confirm Password <span class="required">*</span></label>
                             <input
                               type="password"
                               placeholder="Confirm password"
@@ -143,14 +154,14 @@
                               required
                             />
                             <i class="bx bx-hide eye-icon"></i>
-                          </div>   
-                          <div class="update">
-                            <button class="btn_update">
-                              Update
-                            </button>
                           </div>
                                                   
                       </div>
+                  </div>
+                  <div class="update">
+                    <button class="btn_update">
+                      Update
+                    </button>
                   </div>
               </form>
             </div>
