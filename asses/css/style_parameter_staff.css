@@ -246,9 +246,8 @@ a {
     transition: 0.25s;
 }
 
-.book-item:hover {
+.book-item__active {
     border-color: var(--primary-color);
-    transition: 0.25s;
     transform: translateY(-16px);
 }
 
@@ -291,13 +290,6 @@ a {
 
 .passenger {
     margin: 0 30px;
-}
-
-.container {
-    border-radius: 6px;
-    padding: 30px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .passenger__heading {
@@ -370,9 +362,8 @@ form .fields .input-field {
 }
 
 .input-field label {
-    font-size: 12px;
     font-weight: 500;
-    color: #626262d8;
+    color: var(--header-bg)
 }
 
 
@@ -392,9 +383,16 @@ input[type='checkbox'] {
 }
 
 .containter_check_p {
-    font-size: 10px;
+    font-size: 12px;
     padding: 10px;
     color: #707070;
+}
+.fields{
+    padding-top: 40px;    
+}
+
+.input-field{
+    padding: 20px ;
 }
 
 .input-field input {
@@ -435,6 +433,7 @@ input[type='checkbox'] {
 }
 
 
+
 /*check bõ*/
 
 .checkbox {
@@ -447,12 +446,11 @@ input[type='checkbox'] {
 /*nut button*/
 
 .btn_confirm {
-    width: 120px;
-    margin-top: 20px;
+    width: 300px;
     border-radius: 10px;
     padding: 15px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     border: 1px solid #00256C;
     background-color: #00256C;
     color: #ffffff;
@@ -472,6 +470,9 @@ input[type='checkbox'] {
     color: #00256C;
 }
 
-.confirm {
-    justify-content: center;
+.detailsPersonal{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    gap: 50px;
 }
