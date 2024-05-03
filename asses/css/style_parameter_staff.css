@@ -356,7 +356,7 @@ form.secActive .form.first {
 
 form .fields .input-field {
     display: flex;
-    width: calc(100% / 2 - 15px);
+    width: calc(100% / 3 - 20px);
     flex-direction: column;
     margin: 3px 0;
 }

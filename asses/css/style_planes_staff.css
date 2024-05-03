@@ -229,7 +229,7 @@ a {
 /* bat dau chinh sua tu day*/
 
 
-/* Dinh dangj cho thanh tim kiem*/
+/* Dinh dang cho thanh tim kiem*/
 
 .btn_bar {
     background-color: #00256C;
@@ -286,7 +286,7 @@ h1 {
 }
 
 
-/* dinh dang table vaf cac thanh phan ben trong*/
+/* dinh dang table va cac thanh phan ben trong*/
 
 table {
     margin-left: 30px;
@@ -323,7 +323,8 @@ tr:hover {
 /* dinh dang cho thanh phan dialog va bieu mau ben trong*/
 
 dialog {
-    padding: 10px;
+    border-radius: 10px;
+    border-color: transparent;
 }
 
 dialog .wrapper {
@@ -332,19 +333,18 @@ dialog .wrapper {
 
 .field_add_station {
     display: grid;
+    align-items: center;
+    align-content: center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 50px 70px;
 }
 
 .label_station {
-    margin-top: 15px;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .input_station {
     outline: none;
     font-size: 14px;
-    font-weight: 400px;
     color: #333;
     border-radius: 5px;
     border: 1px solid #00256C;
@@ -358,7 +358,7 @@ dialog .wrapper {
     color: #fff;
     margin: 10px;
     height: 40px;
-    border-radius: 1cm;
+    border-radius: 50px;
 }
 
 .btn_station:hover {
