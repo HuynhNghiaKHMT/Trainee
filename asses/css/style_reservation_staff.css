@@ -214,83 +214,14 @@ a {
   object-fit: cover;
 }
 
-/* ===== how  ===== */
-
-.book {
-  padding: 100px 0;
-  background: #f6fbff;
-}
-
-.book__desc {
-  padding-top: 18px;
-  width: 40%;
-}
-
-.book__list {
-  margin-top: 86px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.book-item {
-  padding: 40px;
-  border: 16px solid #eaf6ff;
-  border-radius: 4px;
-  background: #fff;
-  /* hieu ung */
-  transition: 0.25s;
-}
-
-.book-item:hover {
-  border-color: var(--primary-color);
-  transition: 0.25s;
-  transform: translateY(-16px);
-}
-
-.book-tiem__icon {
-  width: 72px;
-  height: 72px;
-}
-
-.book-item__heading {
-  margin-top: 18px;
-  color: #10375c;
-  font-size: 2.6rem;
-  font-weight: 600;
-  line-height: 1.39;
-}
-
-.book-item__desc {
-  min-height: 120px;
-  margin-top: 28px;
-  color: #575f66;
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 1.75;
-}
-
-.book-item__link {
-  margin: 18px 0 auto;
-  display: inline-block;
-  color: #2e80ce;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.75;
-}
-
-/* bat dau chinh sua tu day*/
-
 /* Dinh dang cho thanh tim kiem*/
 
 .btn_bar_remove {
   background-color: #00256c;
   width: calc(100% / 6 - 50px);
-  height: 50px;
+  height: 45px;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 10px;
   border-color: #00256c;
 }
 
@@ -334,7 +265,7 @@ a {
 }
 
 .container_bar_search_input {
-  padding-left: 10px; /* Giảm khoảng cách bên trái */
+  padding-left: 88px; /* Giảm khoảng cách bên trái */
   padding-right: 1px; /* Thêm khoảng cách bên phải */
 }
 
