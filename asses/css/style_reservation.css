@@ -222,6 +222,7 @@ a {
   margin-top: 8px;
   display: flex;
   align-items: center;
+  justify-content:space-around;
   text-align: center;
 }
 .pnr__result,
@@ -249,8 +250,8 @@ a {
 .das_result {
   padding-top: 22px;
   display: flex;
-  align-items: top;
   text-align: center;
+  justify-content: space-around;
 }
 
 .departure__result,
@@ -308,38 +309,31 @@ a {
 }
 .airplane-ticket {
   border-radius: 20px;
-  background: rgba(0, 100, 222, 0.41) content-box,
-    linear-gradient(rgba(221, 221, 221, 0.2), rgba(221, 221, 221, 0.2)),
-    linear-gradient(#575f66, #575f66) border-box;
   border: 1px solid transparent;
   display: flex;
   flex-direction: column;
-  padding: 9px 17.3px 88px 10px;
   box-sizing: border-box;
 }
 .airtic {
   background: url("/asses/img/airtic_1.png") 5% / cover no-repeat;
-  margin-bottom: 1px;
+  margin-left: 20px;
   width: 190px;
   height: 150px;
 }
 .res-thanks {
-  margin: 0 0 29px 1px;
+  margin:10px;
   display: inline-block;
   overflow-wrap: break-word;
   font-family: "Poppins";
   font-weight: 600;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 1;
   color: #ffffff;
 }
 .res-remind {
-  margin-left: 8.3px;
-  align-self: center;
-  text-align: center;
-  overflow-wrap: break-word;
+  margin:10px;
   font-family: "Poppins";
   font-weight: 600;
-  font-size: 23px;
+  font-size: 24px;
   color: #ffffff;
 }
