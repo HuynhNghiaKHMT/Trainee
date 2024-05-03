@@ -71,7 +71,7 @@
                 <svg class="search_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50" height="50"  fill="#00256C" >
                 <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
                 
-                <input class="input" type="text" placeholder="Search plane ID ..." />
+                <input class="input" type="text" placeholder="Search user/staff ID ..." />
                 
               </div>
   
@@ -79,16 +79,24 @@
       
               <button id="btnAdd" class="btn_bar">Add</button>
               
-              <dialog id="dialog_add">
+              <dialog id="dialog_add_role">
                 <div class ="wrapper">
                   <form>
                     <div class= "field_add_station"> 
-                      <label class="label_station">Plane ID:</label>
-                      <input required class="input_station" type="text" placeholder="Enter Plane ID">
-                      <label class="label_station">Plane Name:</label>
-                      <input required id='duration_dialog' class="input_station" type="text" placeholder="Enter Plane Name" >
-                      <label class="label_station">Manufacture ID:</label>
-                      <input required id='note_dialog' class="input_station" type="text" placeholder="Enter Manufacture ID">
+
+                      <label class="label_station">User/Staff ID:</label>
+                      <input required class="input_station" type="text" placeholder="Enter user/staff ID">
+                      <label class="label_station">Role:</label>
+                      <input required class="input_station" type="number" placeholder="Enter Role Number" >
+                      <label class="label_station"> Full Name:</label>
+                      <input required class="input_station" type="text" placeholder="Enter Full Name">
+                      <label class="label_station"> ID Card:</label>
+                      <input required class="input_station" type="text" placeholder="Enter ID Card">
+                      <label class="label_station"> Phone Number:</label>
+                      <input required class="input_station" type="text" placeholder="Enter Phone Number">
+                      <label class="label_station"> Email:</label>
+                      <input required class="input_station" type="text" placeholder="Enter email">
+
                       <button id="confirmAdd" class="btn_station"  >Add</button>
                       <button id="cancelAdd" class="btn_station">Cancel</button>
                   </div>
@@ -98,16 +106,24 @@
       
               <button id="btnUpdate" class="btn_bar">Update</button>
       
-              <dialog id='dialog_update'>
+              <dialog id='dialog_update_role'>
                 <div class ="wrapper">
                   <form>
                     <div class= "field_add_station"> 
-                      <label class="label_station">Plane ID:</label>
-                      <input required class="input_station" type="text" placeholder="Enter Plane ID">
-                      <label class="label_station">Plane Name:</label>
-                      <input required id='duration_dialog' class="input_station" type="number" placeholder="Enter Plane Name" >
-                      <label class="label_station"> Manufacture ID:</label>
-                      <input required id='note_dialog' class="input_station" type="text" placeholder="Enter Manufacture ID">
+
+                      <label class="label_station">User/Staff ID:</label>
+                      <input required class="input_station" type="text" placeholder="Enter user/staff ID">
+                      <label class="label_station">Role:</label>
+                      <input required class="input_station" type="number" placeholder="Enter Role Number" >
+                      <label class="label_station"> Full Name:</label>
+                      <input required class="input_station" type="text" placeholder="Enter Full Name">
+                      <label class="label_station"> ID Card:</label>
+                      <input required class="input_station" type="text" placeholder="Enter ID Card">
+                      <label class="label_station"> Phone Number:</label>
+                      <input required class="input_station" type="text" placeholder="Enter Phone Number">
+                      <label class="label_station"> Email:</label>
+                      <input required class="input_station" type="text" placeholder="Enter email">
+
                      <button id="confirmUpdate" class="btn_station">Update</button>
                     <button id="cancelUpdate" class="btn_station">Cancel</button>
                   </div>
@@ -117,11 +133,11 @@
       
               <button id="btnRemove" class="btn_bar">Remove</button>
       
-              <dialog id='dialog_remove'>
+              <dialog id='dialog_remove_role'>
                 <div class ="wrapper">
                   <form>
                     <div class= "field_add_station"> 
-                      <label class="label_station">Plane ID:</label>
+                      <label class="label_station">User/Staff ID:</label>
                       <input required class="input_station" type="text" placeholder="Enter Plane ID">
                       <button id="confirmRemove" class="btn_station">Remove</button>
                       <button id="cancelRemove" class="btn_station">Cancel</button>
@@ -136,14 +152,20 @@
             <table id="table_decentralization" class="table">
               <div class="table_title">
                 <tr>
-                  <th>Plane ID</th>
-                  <th>Plane Name</th>
-                  <th>Manufacture ID</th>
+                  <th>ID</th>
+                  <th>Role</th>
+                  <th>Full Name</th>
+                  <th>ID Card</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
                 </tr>
               </div>
   
               <div class="table_row">
                 <tr>
+                  <td>1</td>
+                  <td>Anh</td>
+                  <td>10</td>
                   <td>1</td>
                   <td>Anh</td>
                   <td>10</td>
@@ -155,6 +177,9 @@
                   <td>2</td>
                   <td>M34</td>
                   <td>10</td>
+                  <td>1</td>
+                  <td>Anh</td>
+                  <td>10</td>
                 </tr>
               </div>
   
@@ -164,7 +189,7 @@
         </section>
 
     <!--Phan java script-->
-    <script src="/asses/js/staff_decentralization.js"></script>
+    <script src="/asses/js/admin_decentralization.js"></script>
   </body>
 </html>
     
