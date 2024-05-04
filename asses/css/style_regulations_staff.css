@@ -190,6 +190,9 @@
   padding: 100px 0;
   background: #f6fbff;
 }
+.book__heading{
+  text-align: center;
+}
 .book__desc {
   padding-top: 18px;
   width: 40%;
