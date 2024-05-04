@@ -161,8 +161,7 @@ a {
 /* heading */
 .lookup_heading{
   text-align: center;
-  margin-top: 60px;
-  padding: 30px;
+  margin: 60px;
   color: var(--header-bg);
   font-size: 45px;
   font-weight: 700;

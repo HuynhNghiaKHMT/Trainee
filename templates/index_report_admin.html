@@ -58,27 +58,126 @@
 
       <!-- main -->
       <main>
+        <section class="report">
+          <div class="container">
+            
+            <!-- heading -->
+            <h1 class="report_heading">REPORT</h1>
+            
+            <div class="container_report">
+              <!-- search -->
+              <div class="container_left">
+                <div class="report_types">
+                  <button id="btn_yearlyReport" class="btn_bar">Yearly report</button>
+                  <button id="btn_monthlyReport" class="btn_bar">Monthly report</button>
+                </div>
 
-        <!-- hero -->
-        <section class="hero">
-          <img
-            class="hero__img "
-            src="/asses/img/Plane_0.svg"
-            alt="Plane_0"
-          />
-          <div class="hero__content">
-            <h1 class="hero__heading">Report</h1>
-            <p class="hero__desc">
-              Enjoy your trip and receive the personal service you deserve. with world-leading services
-            </p>
-            <div class="hero__row">
-              <a href="/templates/index_booking.html" class="btn">Book Online</a>
-              <span class="hero__phone">or call (123) 456-789</span>
+                <!-- style="search_yearly" -->
+                <div id="search_yearly" class="search_yearly">
+                  <input class="input" type="number" placeholder="Select year" />
+                </div>
+
+                <!-- style="search_monthly" -->
+                <div id="search_monthly" class="search_monthly" style="display: none;">
+                  <input class="input" type="number" placeholder="Select year" />
+                  <input class="input" type="number" placeholder="Select month" />
+                </div>
+            
+                <div class="preparation">
+                  <button id="btnSearch" class="btn_bar">Report preparation</button>
+                </div>
+              </div>
+    
+              <!-- table -->
+              <div class="container_right">
+                <!-- table for yearly report -->
+                <table id="table_yearly" class="table">
+    
+                  <!-- title -->
+                  <div class="table_title">
+                    <tr>
+                      <th>Month</th>
+                      <th>Number of flights</th>
+                      <th>Total Revenue</th>
+                      <th>Rate</th>
+                    </tr>
+                  </div>
+                  
+                  <!-- result 1 -->
+                  <div class="table_row">
+                    <tr>
+                      <td>11</td>
+                      <td>2</td>
+                      <td>160000</td>
+                      <td>30,146514618</td>
+                    </tr>
+                  </div>
+      
+                  <!-- result 2 -->
+                  <div class="table_row">
+                    <tr>
+                      <td>12</td>
+                      <td>3</td>
+                      <td>190000</td>
+                      <td>30,146514618</td>
+                    </tr>
+                  </div>
+                </table>
+
+                <!-- table for monthly report -->
+                <table id="table_monthly" class="table" style="display: none;">
+                  
+                  <!-- Title for yearly report -->
+                  <div class="table_title">
+                    <tr>
+                      <th>Flight Code</th>
+                      <th>1st class ticket</th>
+                      <th>2nd class ticket</th>
+                      <th>Total Revenue</th>
+                      <th>Rate</th>
+                    </tr>
+                  </div>
+                  
+                  <!-- result 1 -->
+                  <div class="table_row">
+                    <tr>
+                      <td>MH37</td>
+                      <td>20</td>
+                      <td>50</td>
+                      <td>1200000</td>
+                      <td>25.4</td>
+                    </tr>
+                  </div>
+
+                  <!-- result 2 -->
+                  <div class="table_row">
+                    <tr>
+                      <td>MH37</td>
+                      <td>20</td>
+                      <td>50</td>
+                      <td>1200000</td>
+                      <td>25.4</td>
+                    </tr>
+                  </div>
+
+                </table>
+
+              </div>
             </div>
-          </div> 
+
+            <div class="report_bottom">
+              <div class="report_total">
+                <p class="report_desc"> Tổng doanh thu:</p>
+                <p class="report_price">545000</p>
+              </div>
+              <button id="btnSearch" class="btn_bar">Chuyển sang file Excel</button>
+            </div>
+  
+          </div>
         </section>
-        
       </main>
+
+    <script src='/asses/js/staff_report.js'></script>
   </body>
 </html>
     

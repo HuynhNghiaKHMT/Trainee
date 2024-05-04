@@ -110,6 +110,13 @@ a {
   background: var(--header-bg);
   min-width: 100vw;
 }
+.heading{
+  text-align: center;
+  margin: 60px;
+  color: var(--header-bg);
+  font-size: 45px;
+  font-weight: 700;
+}
 
 .menu {
   padding: 10px;
