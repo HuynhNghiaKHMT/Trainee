@@ -288,7 +288,7 @@ h1 {
   text-align: center;
 }
 
-/* dinh dang table vaf cac thanh phan ben trong*/
+/* dinh dang table va cac thanh phan ben trong*/
 
 table {
   margin-left: auto;
@@ -329,60 +329,6 @@ td {
 
 tr:hover {
   background-color: rgb(193, 231, 234);
-}
-
-/* dinh dang cho thanh phan dialog va bieu mau ben trong*/
-
-dialog {
-  padding: 10px;
-  top: 10%;
-  right: 35%;
-}
-
-dialog .wrapper {
-  padding: 16px;
-}
-
-.field_add_station {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 50px 70px;
-}
-
-.label_station {
-  margin-top: 15px;
-  padding: 0 15px;
-}
-
-.input_station {
-  outline: none;
-  font-size: 14px;
-  font-weight: 400px;
-  color: #333;
-  border-radius: 5px;
-  border: 1px solid #00256c;
-  padding: 0 15px;
-  height: 42px;
-  margin: 8px 0;
-}
-
-.btn_station {
-  background-color: #00256c;
-  color: #fff;
-  margin: 10px;
-  height: 40px;
-  border-radius: 1cm;
-}
-
-.btn_station:hover {
-  opacity: 0.9;
-  cursor: pointer;
-  background-color: var(--header-bg);
-}
-
-.btn_station:active {
-  background-color: #fff;
-  color: #00256c;
 }
 
 /* test */
