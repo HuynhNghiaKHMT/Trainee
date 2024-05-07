@@ -11,10 +11,10 @@ body {
 :root {
   --font-heading: "Sora";
   --font-content: "Open Sans";
-  --primary-color: #21A9DE;
-  --header-bg: #00256C;
-  --partners-bg: #F6FBFF;
-  --desc-color:#575F66;
+  --primary-color: #21a9de;
+  --header-bg: #00256c;
+  --partners-bg: #f6fbff;
+  --desc-color: #575f66;
 }
 
 /* ========== common ========== */
@@ -123,21 +123,21 @@ a {
 
 /* ===== search ===== */
 
-.search{
+.search {
   height: 100vh;
-  background: var(--partners-bg)
+  background: var(--partners-bg);
 }
 
 /* ===== hero ===== */
 .hero__heading {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 7rem;
   font-weight: 600;
   line-height: 1.14;
   letter-spacing: -1.4px;
 }
-.hero{
+.hero {
   display: flex;
   position: relative;
 }
@@ -149,11 +149,11 @@ a {
 
 /* ===== search container ===== */
 
-.search__container{
+.search__container {
   margin-top: 165px;
   padding: 15px 30px 15px;
   border-radius: 30px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: relative;
   display: flex;
@@ -163,48 +163,45 @@ a {
 
 .fromto__search,
 .calendar__search,
-.seat__search{
+.seat__search {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.fromto__search{
+.fromto__search {
   text-align: center;
 }
 .calendar__search,
 .seat__search,
-.fromto__search{
+.fromto__search {
   gap: 20px;
 }
-.abb-name{
+.abb-name {
   min-width: 155px;
-  color:var(--header-bg);
+  color: var(--header-bg);
   font-family: Poppins;
   font-size: 3.5rem;
   font-weight: 600;
-  
 }
-.name{
+.name {
   min-width: 150px;
 }
 .form-label,
-.full-name{
-  
+.full-name {
   padding-top: 10px;
   color: var(--desc-color);
   font-family: Poppins;
   font-size: 2rem;
   font-weight: 400;
-  
 }
-.btn__search{
+.btn__search {
   width: 150px;
   height: 70px;
   border-radius: 20px;
-  background: #00256C;
+  background: #00256c;
 
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Poppins;
   font-size: 26px;
@@ -213,12 +210,11 @@ a {
 }
 
 .form-label,
-.form-input{
+.form-input {
   display: block;
 }
 
 .form-input {
-
   height: 34px;
   margin-top: 10px;
   padding: 4px 8px;
@@ -227,37 +223,36 @@ a {
 }
 
 /* ===== button search ===== */
-.btn__search:hover{
+.btn__search:hover {
   cursor: pointer;
   color: var(--header-bg);
-  background: var(--partners-bg)
+  background: var(--partners-bg);
 }
 
 /* ===== result ===== */
-.result{
+.result {
   margin-top: 60px;
 }
-.result__container{
+.result__container {
   height: 200px;
   margin-top: 30px;
   border-radius: 30px;
- 
 
   display: flex;
   align-items: center;
 }
-.information{
+.information {
   padding: 15px;
   width: 550px;
   height: 200px;
   border-radius: 20px 0 0 20px;
   background: #fff;
-  border: 1px solid #00256C;
+  border: 1px solid #00256c;
 }
 /* ===== from - to ===== */
 .fromto__result,
 .calendar__result,
-.seat__result{
+.seat__result {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -265,11 +260,11 @@ a {
   gap: 20px;
 }
 .to__result,
-.from__result{
+.from__result {
   width: 180px;
 }
-.res-time{
-  color: #00256C;
+.res-time {
+  color: #00256c;
   text-align: center;
   font-family: Roboto;
   font-size: 5rem;
@@ -277,15 +272,15 @@ a {
   font-weight: 400;
   line-height: 1.3;
 }
-.res-name{
-  color: rgba(87, 95, 102, 0.80);
+.res-name {
+  color: rgba(87, 95, 102, 0.8);
   text-align: center;
   font-family: Poppins;
   font-size: 3rem;
   font-weight: 400;
   line-height: 1.3;
 }
-.code{
+.code {
   padding-top: 22px;
   display: flex;
   align-items: center;
@@ -293,45 +288,42 @@ a {
 .res__dura,
 .res__details,
 .res__station,
-.res__code{
-  
-  color: #00256C;
+.res__code {
+  color: #00256c;
   text-align: center;
   font-family: Poppins;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.3;
 }
-.res__code{
+.res__code {
   padding-left: 50px;
 }
-.res__station{
+.res__station {
   padding-left: 90px;
 }
-.res__details{
+.res__details {
   padding-left: 85px;
 }
-.btn__details{
+.btn__details {
   color: var(--header-bg);
   width: 100px;
   height: 40px;
   border-radius: 20px;
-  border: 1px solid  var(--header-bg);
-  background: #FFF;
+  border: 1px solid var(--header-bg);
+  background: #fff;
 }
-.btn__details:hover{
+.btn__details:hover {
   cursor: pointer;
   color: var(--partners-bg);
   background: var(--header-bg);
 }
 #toList,
-#fromList{
-  
+#fromList {
   text-align: start;
 }
 
 .destination-list {
-  
   width: 350px;
   display: none;
   position: absolute;
@@ -340,26 +332,25 @@ a {
   border-radius: 5px;
   padding: 10px;
   z-index: 1;
-  
 }
 .international__li,
-.domestic__li{
+.domestic__li {
   color: var(--header-bg);
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.14;
 }
-.li{
+.li {
   padding-left: 10px;
   margin: 5px;
 }
 .from__search:hover,
-.to__search:hover{
+.to__search:hover {
   cursor: pointer;
 }
 
 /* ==== price==== */
-.price{
+.price {
   height: 200px;
   flex: auto;
   text-align: center;
@@ -367,30 +358,30 @@ a {
   padding: 30px;
   border-radius: 0 20px 20px 0;
   background: #fff;
-  border: 1px solid #00256C;
+  border: 1px solid #00256c;
 }
-.pre{
+.pre {
   height: 50px;
   text-align: center;
 }
-.price__class{
-  color: #575F66;
+.price__class {
+  color: #575f66;
   text-align: center;
   font-family: Poppins;
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.3;
 }
-.price__vnd{
-  color: #00256C;
+.price__vnd {
+  color: #00256c;
   font-family: Poppins;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
   line-height: 1.3;
 }
-.price__number{
-  color: #F00;
+.price__number {
+  color: #f00;
   font-family: Poppins;
   font-size: 2.6rem;
   font-style: normal;
@@ -398,16 +389,15 @@ a {
   line-height: 1.3;
 }
 
-
 /* ==== itinerary ==== */
 
-.shape{
+.shape {
   padding: 0 85px 40px;
   border-radius: 20px;
   background: #fff;
   border: 1px solid var(--header-bg);
 }
-.title__heading{
+.title__heading {
   padding: 40px 0 20px;
   color: var(--header-bg);
   font-family: Poppins;
@@ -416,7 +406,7 @@ a {
   line-height: 1.3;
 }
 
-.title__destination{
+.title__destination {
   width: 1000px;
   height: 120px;
   background: var(--partners-bg);
@@ -427,7 +417,7 @@ a {
   align-items: center;
 }
 .item__full,
-.item__abb{
+.item__abb {
   max-width: 140px;
   text-align: center;
 
@@ -435,10 +425,10 @@ a {
   font-family: Poppins;
   font-size: 40px;
   font-weight: 600;
-  line-height: 1.3
+  line-height: 1.3;
 }
-.item__full{
-  margin: 14px 5px  0 5px;
+.item__full {
+  margin: 14px 5px 0 5px;
   color: var(--desc-color);
   text-align: center;
   font-family: Poppins;
@@ -447,27 +437,27 @@ a {
 }
 
 /* ==== content ==== */
-.content{
+.content {
   margin-top: 20px;
   padding: 50px 70px 50px;
   height: 500px;
   border-radius: 20px;
   border: 1px solid var(--header-bg);
 }
-.item{
+.item {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   gap: 50px;
 }
-.content__heading{
+.content__heading {
   color: var(--header-bg);
   font-family: Poppins;
   font-size: 26px;
   font-weight: 500;
   line-height: 1.3;
 }
-.content__desc{
+.content__desc {
   color: var(--desc-color);
   font-family: Poppins;
   font-size: 24px;
@@ -475,7 +465,93 @@ a {
   line-height: 1.3;
 }
 
-.itinerary{
+.itinerary {
   display: none;
   margin-top: 10px;
+}
+
+/* test */
+.congratulation__action {
+  width: 150px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.user_name {
+  color: #00256c;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.congratulation__action:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* test */
+.info__personal {
+  padding: 20px;
+  width: 250px;
+  height: 260px;
+  background: #fff;
+  text-align: center;
+
+  position: fixed;
+  right: 0; /* Đặt vị trí ở phía trái */
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.name__heading {
+  margin-top: 10px;
+  color: #00256c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.name__desc {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.underlined {
+  margin: 10px 0 10px;
+  width: 270px;
+  height: 1px;
+  background: #d9d9d9;
+}
+
+.name__id,
+.name__functions {
+  color: #00256c;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.personal__page,
+.booked__tickets,
+.log_out {
+  padding-left: 20px;
+  margin: 10px auto;
+  width: 250px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.personal__page:hover,
+.booked__tickets:hover,
+.log_out:hover {
+  border-radius: 10px;
+  background: #d9d9d9;
 }

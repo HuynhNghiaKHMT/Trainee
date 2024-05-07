@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.querySelector(".form.Sign.in form");
-  const emailOrUsernameInput = document.getElementById("email");
+  const passwordInput = document.querySelector(".password");
 
   loginForm.addEventListener("submit", function (event) {
-    const emailOrUsername = emailOrUsernameInput.value.trim();
-    const password = document.querySelector(".password").value.trim();
+    const usernameInput = document.querySelector(".input"); // Sử dụng querySelector để lấy input user name
 
-    if (!isValidEmail(emailOrUsername) && !isValidUsername(emailOrUsername)) {
-      alert("Please enter a valid email address or username.");
+    const username = usernameInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    if (!isValidUsername(username)) {
+      alert("Please enter a valid username.");
       event.preventDefault();
       return;
     }
@@ -20,10 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
   });
-
-  function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
 
   function isValidUsername(username) {
     return (

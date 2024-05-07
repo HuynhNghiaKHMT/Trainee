@@ -14,14 +14,12 @@ body {
 :root {
   --font-heading: "Sora";
   --font-content: "Open Sans";
-  --primary-color: #21A9DE;
-  --header-bg: #00256C;
-  --partners-bg: #F6FBFF;
+  --primary-color: #21a9de;
+  --header-bg: #00256c;
+  --partners-bg: #f6fbff;
 }
 
-
 /* ========== common ========== */
-
 
 /* se co nhung the khong an theo thuoc tinh chung */
 
@@ -106,7 +104,6 @@ a {
   rotate: 180deg;
 }
 
-
 /* ========== header ========== */
 
 .header {
@@ -154,7 +151,6 @@ a {
 .header__action--login {
   margin-right: 7px;
 }
-
 
 /* ========== main ========== */
 
@@ -225,19 +221,17 @@ a {
   line-height: 1.75;
 }
 
-
 /* bat dau chinh sua tu day*/
-
 
 /* Dinh dang cho thanh tim kiem*/
 
 .btn_bar {
-  background-color: #00256C;
+  background-color: #00256c;
   width: calc(100% / 6 - 50px);
   height: 50px;
-  color: #FFF;
+  color: #fff;
   border-radius: 10px;
-  border-color: #00256C;
+  border-color: #00256c;
 }
 
 .btn_bar:hover {
@@ -248,7 +242,7 @@ a {
 .btn_bar:active {
   /* Lam mo nen */
   background-color: #f7f7f7;
-  color: #00256C;
+  color: #00256c;
 }
 
 .input {
@@ -257,8 +251,8 @@ a {
   width: 400px;
   height: 50px;
   border-radius: 10px;
-  color: #00256C;
-  border-color: #00256C;
+  color: #00256c;
+  border-color: #00256c;
 }
 
 .container_bar {
@@ -268,7 +262,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.search{
+.search {
   padding-left: 20px;
   display: flex;
   align-items: center;
@@ -276,11 +270,11 @@ a {
 
 h1 {
   padding: 30px;
-  color: #00256C;
+  color: #00256c;
   font-size: 45px;
   font-weight: bold;
 }
-.decentralization_heading{
+.decentralization_heading {
   margin-top: 60px;
   text-align: center;
 }
@@ -301,7 +295,7 @@ th {
 table,
 th,
 td {
-  border: 1px solid #00256C;
+  border: 1px solid #00256c;
   border-collapse: collapse;
   text-align: center;
 }
@@ -317,7 +311,6 @@ td {
 tr:hover {
   background-color: rgb(193, 231, 234);
 }
-
 
 /* dinh dang cho thanh phan dialog va bieu mau ben trong*/
 
@@ -346,14 +339,14 @@ dialog .wrapper {
   font-size: 14px;
   color: #333;
   border-radius: 5px;
-  border: 1px solid #00256C;
+  border: 1px solid #00256c;
   padding: 0 15px;
   height: 42px;
   margin: 8px 0;
 }
 
 .btn_station {
-  background-color: #00256C;
+  background-color: #00256c;
   color: #fff;
   margin: 10px;
   height: 40px;
@@ -363,14 +356,100 @@ dialog .wrapper {
 .btn_station:hover {
   opacity: 0.9;
   cursor: pointer;
-  background-color: var(--header-bg)
+  background-color: var(--header-bg);
 }
 
 .btn_station:active {
   background-color: #fff;
-  color: #00256C;
+  color: #00256c;
 }
 
 .table_title {
   text-decoration-thickness: 3px;
+}
+
+/* test */
+.congratulation__action {
+  width: 150px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.user_name {
+  color: #00256c;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.congratulation__action:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* test */
+.info__personal {
+  padding: 20px;
+  width: 250px;
+  height: 150px;
+  background: #fff;
+  text-align: center;
+
+  position: fixed;
+  right: 0; /* Đặt vị trí ở phía trái */
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.name__heading {
+  margin-top: 10px;
+  color: #00256c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.name__desc {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.underlined {
+  margin: 10px 0 10px;
+  width: 270px;
+  height: 1px;
+  background: #d9d9d9;
+}
+
+.name__id,
+.name__functions {
+  color: #00256c;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.personal__page,
+.booked__tickets,
+.log_out {
+  padding-left: 20px;
+  margin: 10px auto;
+  width: 250px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.personal__page:hover,
+.booked__tickets:hover,
+.log_out:hover {
+  border-radius: 10px;
+  background: #d9d9d9;
 }
