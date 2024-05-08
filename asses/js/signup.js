@@ -104,3 +104,33 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 });
+
+const createPasswordField = document.getElementById("createPasswordInput");
+const confirmPasswordField = document.getElementById("confirmPasswordInput");
+
+const toggleCreatePassword = document.getElementById("toggleCreatePassword");
+const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
+
+toggleCreatePassword.addEventListener("click", function () {
+  if (createPasswordField.type === "password") {
+    createPasswordField.type = "text";
+    toggleCreatePassword.querySelector("i").classList.remove("fa-eye");
+    toggleCreatePassword.querySelector("i").classList.add("fa-eye-slash");
+  } else {
+    createPasswordField.type = "password";
+    toggleCreatePassword.querySelector("i").classList.remove("fa-eye-slash");
+    toggleCreatePassword.querySelector("i").classList.add("fa-eye");
+  }
+});
+
+toggleConfirmPassword.addEventListener("click", function () {
+  if (confirmPasswordField.type === "password") {
+    confirmPasswordField.type = "text";
+    toggleConfirmPassword.querySelector("i").classList.remove("fa-eye");
+    toggleConfirmPassword.querySelector("i").classList.add("fa-eye-slash");
+  } else {
+    confirmPasswordField.type = "password";
+    toggleConfirmPassword.querySelector("i").classList.remove("fa-eye-slash");
+    toggleConfirmPassword.querySelector("i").classList.add("fa-eye");
+  }
+});
