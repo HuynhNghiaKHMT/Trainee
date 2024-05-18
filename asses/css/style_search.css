@@ -392,6 +392,7 @@ a {
 /* ==== itinerary ==== */
 
 .shape {
+  height: 100vh;
   padding: 0 85px 40px;
   border-radius: 20px;
   background: #fff;
@@ -438,9 +439,10 @@ a {
 
 /* ==== content ==== */
 .content {
+  height: 90vh;
   margin-top: 20px;
   padding: 50px 70px 50px;
-  height: 500px;
+
   border-radius: 20px;
   border: 1px solid var(--header-bg);
 }
@@ -449,6 +451,15 @@ a {
   display: flex;
   align-items: center;
   gap: 50px;
+}
+.content-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content__information{
+  width:500px;
+
 }
 .content__heading {
   color: var(--header-bg);

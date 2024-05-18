@@ -1,4 +1,4 @@
-//  nois chung phan nay thi sao chep het vao
+
 const dl_add = document.getElementById("dialog_add");
 const btnAdd = document.getElementById("btnAdd");
 const btnConAdd = document.getElementById("confirmAdd");
