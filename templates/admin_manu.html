@@ -58,13 +58,13 @@
                     d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
                   />
                 </svg>
-                <p class="user_name">Staff</p>
+                <p class="user_name">Admin</p>
               </div>
             </div>
             <section class="info__personal" style="display: none">
               <div class="info__name">
                 <h2 class="name__heading">Nguyen Hong Phat</h2>
-                <p class="name__desc">(Staff)</p>
+                <p class="name__desc">(Admin)</p>
                 <div class="underlined"></div>
               </div>
               <div class="user_functions">
@@ -175,11 +175,11 @@
 
           <!-- title -->
           <div class="add-booking">
-              <h1 class="planes_heading">Manufactor</h1>
+              <h1 class="planes_heading">Manufacturer</h1>
               <div class="add-booking__icon" id="btnAdd">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 512 512" fill="#00256C">
-                <path d="M192 93.7C192 59.5 221 0 256 0c36 0 64 59.5 64 93.7l0 66.3L497.8 278.5c8.9 5.9 14.2 15.9 14.2 26.6v56.7c0 10.9-10.7 18.6-21.1 15.2L320 320v80l57.6 43.2c4 3 6.4 7.8 6.4 12.8v42c0 7.8-6.3 14-14 14c-1.3 0-2.6-.2-3.9-.5L256 480 145.9 511.5c-1.3 .4-2.6 .5-3.9 .5c-7.8 0-14-6.3-14-14V456c0-5 2.4-9.8 6.4-12.8L192 400V320L21.1 377C10.7 380.4 0 372.7 0 361.8V305.1c0-10.7 5.3-20.7 14.2-26.6L192 160V93.7z"/></svg>
-                <a class="add__tickets" href="#">Add plane</a>
+                  <path d="M64 32C46.3 32 32 46.3 32 64V304v48 80c0 26.5 21.5 48 48 48H496c26.5 0 48-21.5 48-48V304 152.2c0-18.2-19.4-29.7-35.4-21.1L352 215.4V152.2c0-18.2-19.4-29.7-35.4-21.1L160 215.4V64c0-17.7-14.3-32-32-32H64z"/></svg>
+                <a class="add__tickets" href="#">Add Manufacturer</a>
               </div>
           </div>
 
@@ -188,15 +188,14 @@
             <div class ="wrapper">
               <form>
                 <div class= "field_add"> 
-                  <label class="label">Plane ID:</label>
-                  <input required class="input" type="text" placeholder="Enter Plane ID">
-                  <label class="label">Plane Name:</label>
-                  <input required id='duration_dialog' class="input" type="text" placeholder="Enter Plane Name" >
-                  <label class="label">Manufacture ID:</label>
-                  <input required id='note_dialog' class="input" type="text" placeholder="Enter Manufacture ID">
+                  <label class="label">Manufacturer ID:</label>
+                  <input required class="input" type="text" placeholder="Enter Manufacturer ID">
+                  <label class="label">Manufacturer Name:</label>
+                  <input required id='duration_dialog' class="input" type="text" placeholder="Enter Manufacturer Name" >
+
                   <div class="button">
-                    <button id="confirmAdd" class="btn">Add</button>
-                    <button id="cancelAdd" class="btn">Cancel</button>
+                    <input type="submit" id="confirmAdd" class="btn" value="Confirm">
+                    <input type="button" id="cancelAdd" class="btn" value="Cancel">
                   </div>
               </div>
             </form>
@@ -207,51 +206,44 @@
           <table id="table_planes" class="table">
             
               <tr>
-                <th style="width: 15%;">Airport Code</th>
-                <th style="width: 25%;">Airport Name</th>
-                <th>Address</th>
-                <th style="width: 15%;">Button</th>
+                <th style="width: 25%;">Manufacturer ID</th>
+                <th>Manufacturer Name</th>
+                <th style="width: 15%;">Action</th>
               </tr>
             
               <tr>
                 <td>1</td>
                 <td>Anh</td>
-                <td>10</td>
                 <td><button class="btn-delete">Delete</button></td>
               </tr>
             
               <tr>
                 <td>2</td>
                 <td>M34</td>
-                <td>10</td>
                 <td><button class="btn-delete">Delete</button></td>
               </tr>
 
               <tr>
                 <td>2</td>
                 <td>M34</td>
-                <td>10</td>
                 <td><button class="btn-delete">Delete</button></td>
               </tr>
 
               <tr>
                 <td>2</td>
                 <td>M34</td>
-                <td>10</td>
                 <td><button class="btn-delete">Delete</button></td>
               </tr>
 
               <tr>
                 <td>2</td>
                 <td>M34</td>
-                <td>10</td>
                 <td><button class="btn-delete">Delete</button></td>
               </tr>
 
               <tr>
                 <td>2</td>
                 <td>M34</td>
-                <td>10</td>
                 <td><button class="btn-delete">Delete</button></td>
               </tr>
               
