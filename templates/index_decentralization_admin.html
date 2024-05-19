@@ -14,220 +14,215 @@
     <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
 
     <!-- font icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
     <!-- reset css -->
-    <link rel="stylesheet" href="/asses/css/reset.css"/>
+    <link rel="stylesheet" href="/asses/css/reset.css" />
     <!-- style css -->
     <link rel="stylesheet" href="/asses/css/style_decentralization_admin.css" />
-    
+
     <title>VietHub Airline</title>
   </head>
-    <body>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="menu">
+        <!-- Logo -->
+        <img
+          src="/asses/favicon/Logo_Gr.svg"
+          alt="Shine smile"
+          class="logo header__logo"
+        />
+        <!-- Navbar  -->
+        <nav class="navbar">
+          <ul class="navbar__list" id="navbar__list--pc">
+            <li class="navbar__item">
+              <a
+                href="/templates/index_decentralization_admin.html"
+                class="navbar__link navbar__link--active"
+                >Decentralization</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="/templates/index_report_admin.html" class="navbar__link"
+                >Report</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a
+                href="/templates/index_regulations_staff.html"
+                class="navbar__link"
+                >Regulations</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-      <!-- header -->
-      <header class="header">
-        <div class="menu">
-          <!-- Logo -->
-          <img
-                src="/asses/favicon/Logo_Gr.svg"
-                alt="Shine smile"
-                class="logo header__logo"
-          />
-          <!-- Navbar  -->
-          <nav class="navbar">
-              <ul class="navbar__list" id="navbar__list--pc">
-                <li class="navbar__item">
-                  <a href="/templates/index_decentralization_admin.html" class="navbar__link navbar__link--active">Decentralization</a>
-                </li>
-                <li class="navbar__item">
-                  <a href="/templates/index_report_admin.html" class="navbar__link">Report</a>
-                </li>
-                <li class="navbar__item">
-                  <a href="/templates/index_regulations_staff.html" class="navbar__link">Regulations</a>
-                </li>
-              </ul>
-          </nav>
-          <!-- cta action -->
-          <div class="congratulation__action">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              viewBox="0 0 448 512"
-            >
-              <path
-                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
-              />
-            </svg>
-            <p class="user_name">Admin</p>
-          </div>
-        
-          <section class="info__personal" style="display: none">
-            <div class="info__name">
-              <h2 class="name__heading">Nguyen Hong Phat</h2>
-              <p class="name__desc">(Admin)</p>
-              <div class="underlined"></div>
-            </div>
-            <div class="user_functions">
-              <a href="#">
-                <div class="log_out">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    viewBox="0 0 512 512"
-                    fill="#00256C"
-                  >
-                    <path
-                      d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z"
-                    />
-                  </svg>
-                  <h2 class="name__functions">Log out</h2>
-                </div>
-              </a>
-            </div>
-          </section>
+        <!-- cta action -->
+        <div class="congratulation__action">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
+            />
+          </svg>
+          <p class="user_name">Admin</p>
         </div>
-      </header>
+      </div>
 
-      <!-- main -->
-      <main>
-
-        <section class="decentralization">
-          <div class="container">
-  
-            <h1 class="decentralization_heading">ADMIN MANAGEMENT</h1>
-  
-            <div class="container_bar">
-  
-              <div class="search">
-                
-                <svg class="search_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50" height="50"  fill="#00256C" >
-                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-                
-                <input class="input" type="text" placeholder="Search user/staff ID ..." />
-                
-              </div>
-  
-              <button id="btnSearch" class="btn_bar">Search</button>
-      
-              <button id="btnAdd" class="btn_bar">Add</button>
-              
-              <dialog id="dialog_add_role">
-                <div class ="wrapper">
-                  <form>
-                    <div class= "field_add_station"> 
-
-                      <label class="label_station">User/Staff ID:</label>
-                      <input required class="input_station" type="text" placeholder="Enter user/staff ID">
-                      <label class="label_station">Role:</label>
-                      <input required class="input_station" type="number" placeholder="Enter Role Number" >
-                      <label class="label_station"> Full Name:</label>
-                      <input required class="input_station" type="text" placeholder="Enter Full Name">
-                      <label class="label_station"> ID Card:</label>
-                      <input required class="input_station" type="text" placeholder="Enter ID Card">
-                      <label class="label_station"> Phone Number:</label>
-                      <input required class="input_station" type="text" placeholder="Enter Phone Number">
-                      <label class="label_station"> Email:</label>
-                      <input required class="input_station" type="text" placeholder="Enter email">
-
-                      <button id="confirmAdd" class="btn_station"  >Add</button>
-                      <button id="cancelAdd" class="btn_station">Cancel</button>
-                  </div>
-                </form>
-                </div>
-              </dialog>
-      
-              <button id="btnUpdate" class="btn_bar">Update</button>
-      
-              <dialog id='dialog_update_role'>
-                <div class ="wrapper">
-                  <form>
-                    <div class= "field_add_station"> 
-
-                      <label class="label_station">User/Staff ID:</label>
-                      <input required class="input_station" type="text" placeholder="Enter user/staff ID">
-                      <label class="label_station">Role:</label>
-                      <input required class="input_station" type="number" placeholder="Enter Role Number" >
-                      <label class="label_station"> Full Name:</label>
-                      <input required class="input_station" type="text" placeholder="Enter Full Name">
-                      <label class="label_station"> ID Card:</label>
-                      <input required class="input_station" type="text" placeholder="Enter ID Card">
-                      <label class="label_station"> Phone Number:</label>
-                      <input required class="input_station" type="text" placeholder="Enter Phone Number">
-                      <label class="label_station"> Email:</label>
-                      <input required class="input_station" type="text" placeholder="Enter email">
-
-                     <button id="confirmUpdate" class="btn_station">Update</button>
-                    <button id="cancelUpdate" class="btn_station">Cancel</button>
-                  </div>
-                </form>
-                </div>
-              </dialog>
-      
-              <button id="btnRemove" class="btn_bar">Remove</button>
-      
-              <dialog id='dialog_remove_role'>
-                <div class ="wrapper">
-                  <form>
-                    <div class= "field_add_station"> 
-                      <label class="label_station">User/Staff ID:</label>
-                      <input required class="input_station" type="text" placeholder="Enter Plane ID">
-                      <button id="confirmRemove" class="btn_station">Remove</button>
-                      <button id="cancelRemove" class="btn_station">Cancel</button>
-                  </div>
-                </form>
-                </div>
-              </dialog>
-      
+      <section class="info__personal" style="display: none">
+        <div class="info__name">
+          <h2 class="name__heading">Nguyen Hong Phat</h2>
+          <p class="name__desc">(Admin)</p>
+          <div class="underlined"></div>
+        </div>
+        <div class="user_functions">
+          <a href="#">
+            <div class="log_out">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                viewBox="0 0 512 512"
+                fill="#00256C"
+              >
+                <path
+                  d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z"
+                />
+              </svg>
+              <h2 class="name__functions">Log out</h2>
             </div>
-  
-            <!-- Tao bang-->
-            <table id="table_decentralization" class="table">
-              <div class="table_title">
-                <tr>
-                  <th>Username</th>
-                  <th>Password</th>
-                  <th>Email	</th>
-                  <th>ID</th>
-                  <th>Roles</th>
-                  <th>Edit</th>
-                </tr>
-              </div>
-  
-              <div class="table_row">
-                <tr>
-                  <td>Venon</td>
-                  <td>28800553</td>
-                  <td>htnttqq@gmail.com</td>
-                  <td>22520945</td>
-                  <td>Admin</td>
-                  <td><button>Edit</button></td>
-                </tr>
-              </div>
-  
-              <div class="table_row">
-                <tr>
-                  <td>Venon</td>
-                  <td>28800553</td>
-                  <td>htnttqq@gmail.com</td>
-                  <td>22520945</td>
-                  <td>Admin</td>
-                  <td><button>Edit</button></td>
-                </tr>
-              </div>
-  
-            </table>
-  
-          </div>
-        </section>
+          </a>
+        </div>
+      </section>
+    </header>
 
-      </main>
+    <!-- main -->
+    <main>
+      <!-- result -->
+      <section class="planes">
+        <div class="container">
+          <!-- title -->
+          <div class="add-booking">
+            <h1 class="planes_heading">Admin Management</h1>
+            <div class="add-booking__icon" id="btnAdd">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                viewBox="0 0 640 512"
+                fill="#00256C"
+              >
+                <path
+                  d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
+                />
+              </svg>
+              <a class="add__tickets" href="#">Add Account</a>
+            </div>
+          </div>
+
+          <!-- onclick -->
+          <dialog id="dialog_add">
+            <div class="wrapper">
+              <form id="add_form">
+                <div class="field_add">
+                  <label class="label">Username:</label>
+                  <input
+                    required
+                    class="input"
+                    type="text"
+                    placeholder="Enter Username"
+                  />
+                  <label class="label">Password:</label>
+                  <input
+                    required
+                    class="input"
+                    type="text"
+                    placeholder="Enter Password"
+                  />
+                  <label class="label">Email:</label>
+                  <input
+                    required
+                    class="input"
+                    type="text"
+                    placeholder="Enter Email"
+                  />
+                  <label class="label">ID:</label>
+                  <input
+                    required
+                    class="input"
+                    type="text"
+                    placeholder="Enter ID"
+                  />
+                  <label class="label">Role:</label>
+                  <input
+                    required
+                    class="input"
+                    type="text"
+                    placeholder="Enter Role"
+                  />
+                  <div class="button">
+                    <input
+                      type="submit"
+                      id="confirmAdd"
+                      class="btn"
+                      value="Confirm"
+                    />
+                    <input
+                      type="button"
+                      id="cancelAdd"
+                      class="btn"
+                      value="Cancel"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </dialog>
+
+          <!-- table -->
+          <table id="table_planes" class="table">
+            <tr>
+              <th style="width: 15%">Username</th>
+              <th style="width: 25%">Password</th>
+              <th style="width: 15%">Email</th>
+              <th style="width: 15%">ID</th>
+              <th>Role</th>
+              <th style="width: 15%">Action</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>Anh</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td><button class="btn-delete">Delete</button></td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>M34</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td><button class="btn-delete">Delete</button></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
 
     <!--Phan java script-->
-    <script src="/asses/js/admin_decentralization.js"></script>
+    <script src="/asses/js/admin_regulation.js"></script>
+    <script src="/asses/js/user_main.js"></script>
   </body>
 </html>
-    

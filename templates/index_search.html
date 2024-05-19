@@ -45,7 +45,7 @@
               <a href="/templates/index.html" class="navbar__link">Home</a>
             </li>
             <li class="navbar__item">
-              <a href="/templates/index_search.html" class="navbar__link">Search</a>
+              <a href="/templates/index_search.html" class="navbar__link navbar__link--active">Search</a>
             </li>
             <li class="navbar__item">
               <a href="/templates/index_booking.html" class="navbar__link">Booking</a>
@@ -324,7 +324,7 @@
                   
                   <!-- <p class="pre price__class" th:text="${flightWithCTHV.cthangve.maHangve}"></p> -->
                   <!-- <p th:text="${flightWithCTHV.cthangve.donGiaHV}"></p> -->
-                  <!-- <p class="pre price__number" th:text="${flightWithCTHV.cthangve.soGheDat}/${flightWithCTHV.cthangve.soLuong}"></p> -->
+                  <!-- <p class="pre price__number" th:text="${flightWithCTHV.cthangve.soGheDat + '/' + flightWithCTHV.cthangve.soLuong}">></p> -->
 
                   <p class="pre price__class">Economic Class</p>
                   <p class="pre price__vnd">VND 2.500.000</p>
@@ -353,11 +353,11 @@
                             </div>
                             <div class="content__information">
                               <div class="content-top">
-                                  <h2 class="content__heading" th:text="${trunggian.maSanBayTG}"></h2>
-                                  <h2 class="content__heading" th:text="${trunggian.maChuyenBay}"></h2>
-                                  <h2 class="content__heading" th:text="${trunggian.thoiGianDung}"></h2>
+                                <h2 class="content__heading" th:text="${'Airport: ' + trunggian.maSanBayTG}"></h2>
+                                <h2 class="content__heading" th:text="${'Flight ID: '+trunggian.maChuyenBay}"></h2>
+                                <h2 class="content__heading" th:text="${'Duration: '+trunggian.thoiGianDung}"></h2>
                               </div>
-                              <div class="content__desc" th:text="${trunggian.ghiChu}"></div>
+                              <div class="content__desc" th:text="${'Note: '+trunggian.ghiChu}"></div>
                             </div>
                         </div>
                     </div>
