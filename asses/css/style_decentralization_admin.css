@@ -232,6 +232,8 @@ td {
 th,
 td {
   padding:10px;
+  overflow: hidden;
+
 }
 tr:hover {
   background-color: rgb(193, 231, 234);
@@ -342,7 +344,6 @@ dialog .wrapper {
 }
 .underlined {
   margin: 10px 0 10px;
-  width: 270px;
   height: 1px;
   background: #d9d9d9;
 }
@@ -358,7 +359,6 @@ dialog .wrapper {
 .log_out {
   padding-left: 20px;
   margin: 10px auto;
-  width: 250px;
   height: 45px;
 
   display: flex;
