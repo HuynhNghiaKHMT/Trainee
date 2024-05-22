@@ -22,7 +22,7 @@
     <!-- reset css -->
     <link rel="stylesheet" href="/asses/css/reset.css"/>
     <!-- style css -->
-    <link rel="stylesheet" href="/asses/css/style_regulations_staff.css" />
+    <link rel="stylesheet" href="/asses/css/style_regulations.css" />
     
     <title>VietHub Airline</title>
   </head>
@@ -114,7 +114,7 @@
                 <td>ID</td>
                 <td class="parameter">000000000</td>
                 <td>
-                    <a onclick="editParameter(this.parentElement.previousElementSibling)">
+                    <a onclick="editId(this.parentElement.previousElementSibling)">
                     <button class="btn-delete">Edit</button></a>
                 </td>
                 
@@ -123,7 +123,7 @@
                 <td>Username</td>
                 <td class="parameter">nguyenhongphat</td>
                 <td>
-                    <a onclick="editParameter(this.parentElement.previousElementSibling)">
+                    <a onclick="editUsername(this.parentElement.previousElementSibling)">
                     <button class="btn-delete">Edit</button></a>
                 </td>
                 
@@ -133,7 +133,7 @@
                 <td>Name</td>
                 <td class="parameter">Nguyễn Hồng Phát</td>
                 <td>
-                    <a onclick="editParameter(this.parentElement.previousElementSibling)">
+                    <a onclick="editName(this.parentElement.previousElementSibling)">
                     <button class="btn-delete">Edit</button></a>
                 </td>
                 
@@ -141,9 +141,9 @@
 
               <tr>
                 <td>Email</td>
-                <td class="parameter">nguyenhongphat@gmail.com</td>
+                <td  class="parameter">nguyenhongphat@gmail.com</td>
                 <td>
-                    <a onclick="editParameter(this.parentElement.previousElementSibling)">
+                    <a onclick="editEmail(this.parentElement.previousElementSibling)">
                     <button class="btn-delete">Edit</button></a>
                 </td>
                 
@@ -153,7 +153,7 @@
                 <td>Role</td>
                 <td class="parameter">1</td>
                 <td>
-                    <a onclick="editParameter(this.parentElement.previousElementSibling)">
+                    <a onclick="editRole(this.parentElement.previousElementSibling)">
                     <button class="btn-delete">Edit</button></a>
                 </td>
                 
@@ -169,39 +169,208 @@
     </main>
 
     <script src="/asses/js/user_main.js"></script>
-    <script src="/asses/js/admin_regulation.js"></script>
     <script>
-        function editParameter(element) {
-            // Tạo phần tử input
-            var input = document.createElement('input');
-            
-            // Gán giá trị hiện tại của ô chứa tham số vào phần tử input
-            input.value = element.innerText.trim();
+      function editEmail(element) {
+        // Create an input element
+        var input = document.createElement('input');
 
-            input.style.width = '250px';
-            input.style.border = 'Transition';
+    
+        // Assign the current value of the parameter to the input element
+        input.value = element.innerText.trim();
+    
+        // Set input styling
+        input.style.width = '280px';
+        input.style.border = '1px solid #ccc'; // Add border to indicate input field
+    
+        // Replace the content of the parameter element with the input element
+        element.innerHTML = '';
+        element.appendChild(input);
 
-            // Thay thế nội dung của ô chứa tham số bằng phần tử input
-            element.innerHTML = '';
-            element.appendChild(input);
-
-                        
-            input.selectionStart = input.selectionEnd = input.value.length;
-            
-            // Xác định sự kiện khi người dùng kết thúc chỉnh sửa
-            input.addEventListener('blur', function() {
-                // Cập nhật giá trị
+        // Define event when the user finishes editing
+        input.addEventListener('blur', function(e) {
+            // Update value
+            if (!isValidEmail(input.value.trim())) {
+                // Display error message if value is below 0
+        
+                alert("Error value: input is not syntax for email");
+            } else {
+              alert("Changes saved successfully!")
+                // If value is valid, update the parameter element
                 element.innerText = input.value.trim();
-            });
-            
-            
-            input.select();
-        }
+            }
+        });
+    
+        // Focus on the input field when editing starts
+        input.focus();
+    }
 
-        function saveChanges() {
-            // Đoạn mã để lưu các thay đổi vào máy chủ có thể được thêm ở đây
-            alert("Changes saved successfully!");
+    function editId(element) {
+      // Create an input element
+      var input = document.createElement('input');
+
+      input.setAttribute("type", "number");
+      // Assign the current value of the parameter to the input element
+      input.value = element.innerText.trim();
+  
+      // Set input styling
+      input.style.width = '100px';
+      input.style.border = '1px solid #ccc'; // Add border to indicate input field
+  
+      // Replace the content of the parameter element with the input element
+      element.innerHTML = '';
+      element.appendChild(input);
+
+      // Define event when the user finishes editing
+      input.addEventListener('blur', function(e) {
+          // Update value
+          if (!isValidUserID(input.value.trim())) {
+              // Display error message if value is below 0
+      
+              alert("Error value: input is not syntax for ID");
+          } else {
+            alert("Changes saved successfully!")
+              // If value is valid, update the parameter element
+              element.innerText = input.value.trim();
+          }
+      });
+  
+      // Focus on the input field when editing starts
+      input.focus();
+  }
+  
+  function editUsername(element) {
+    // Create an input element
+    var input = document.createElement('input');
+
+    // Assign the current value of the parameter to the input element
+    input.value = element.innerText.trim();
+
+    // Set input styling
+    input.style.width = '200px';
+    input.style.border = '1px solid #ccc'; // Add border to indicate input field
+
+    // Replace the content of the parameter element with the input element
+    element.innerHTML = '';
+    element.appendChild(input);
+
+    // Define event when the user finishes editing
+    input.addEventListener('blur', function(e) {
+        // Update value
+        if (!isValidUsername(input.value.trim())) {
+            // Display error message if value is below 0
+    
+            alert("Error value: input is not syntax for username");
+        } else {
+          alert("Changes saved successfully!")
+            // If value is valid, update the parameter element
+            element.innerText = input.value.trim();
         }
+    });
+
+    // Focus on the input field when editing starts
+    input.focus();
+}
+
+function editName(element) {
+  // Create an input element
+  var input = document.createElement('input');
+
+  // Assign the current value of the parameter to the input element
+  input.value = element.innerText.trim();
+
+  // Set input styling
+  input.style.width = '200px';
+  input.style.border = '1px solid #ccc'; // Add border to indicate input field
+
+  // Replace the content of the parameter element with the input element
+  element.innerHTML = '';
+  element.appendChild(input);
+
+  // Define event when the user finishes editing
+  input.addEventListener('blur', function(e) {
+      // Update value
+      if (!isValidFullName(input.value.trim())) {
+          // Display error message if value is below 0
+  
+          alert("Error value: input is not syntax for full name");
+      } else {
+        alert("Changes saved successfully!")
+          // If value is valid, update the parameter element
+          element.innerText = input.value.trim();
+      }
+  });
+
+  // Focus on the input field when editing starts
+  input.focus();
+}
+
+function editRole(element) {
+  // Create an input element
+  var input = document.createElement('input');
+  input.setAttribute("type","number");
+  // Assign the current value of the parameter to the input element
+  input.value = element.innerText.trim();
+
+  // Set input styling
+  input.style.width = '200px';
+  input.style.border = '1px solid #ccc'; // Add border to indicate input field
+
+  // Replace the content of the parameter element with the input element
+  element.innerHTML = '';
+  element.appendChild(input);
+
+  // Define event when the user finishes editing
+  input.addEventListener('blur', function(e) {
+      // Update value
+      if (parseInt(input.value.trim()) < 0 && parseInt(input.value.trim()) >3) {
+          // Display error message if value is below 0
+  
+          alert("Error value: input is not syntax for user name");
+      } else {
+        alert("Changes saved successfully!")
+          // If value is valid, update the parameter element
+          element.innerText = input.value.trim();
+      }
+  });
+
+  // Focus on the input field when editing starts
+  input.focus();
+}
+    function isValidFullName(fullname) {
+      const nameWords = fullname.split(" ");
+      for (let word of nameWords) {
+        if (!/^[A-Z]/.test(word)) {
+          return false;
+        }
+      }
+      return true;
+    }
+  
+    function isValidUserID(userID) {
+      return /^\d{8}$/.test(userID); // quy dinh user id bao nhieu so
+    }
+  
+    function isValidPhoneNumber(phoneNumber) {
+      return /^(0\d{9,10})$/.test(phoneNumber);
+    }
+  
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+  
+    function isValidUsername(username) {
+      return (
+        username.length >= 6 && /\d/.test(username) && /[a-zA-Z]/.test(username)
+      );
+    }
+  
+    function isValidPassword(password) {
+      return (
+        password.length >= 6 && /\d/.test(password) && /[a-zA-Z]/.test(password)
+      );
+    }
+  
+
     </script>
 
 </body>

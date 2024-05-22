@@ -283,37 +283,43 @@
     <script src="/asses/js/user_main.js"></script>
     <script src="/asses/js/admin_regulation.js"></script>
     <script>
-        function editParameter(element) {
-            // Tạo phần tử input
-            var input = document.createElement('input');
-            
-            // Gán giá trị hiện tại của ô chứa tham số vào phần tử input
-            input.value = element.innerText.trim();
+      function editParameter(element) {
+        // Create an input element
+        var input = document.createElement('input');
+    
+        // Restrict input to numbers only
+        input.setAttribute("type", "number");
+        input.setAttribute("min", 0);
+    
+        // Assign the current value of the parameter to the input element
+        input.value = element.innerText.trim();
+    
+        // Set input styling
+        input.style.width = '60px';
+        input.style.border = '1px solid #ccc'; // Add border to indicate input field
+    
+        // Replace the content of the parameter element with the input element
+        element.innerHTML = '';
+        element.appendChild(input);
 
-            input.style.width = '30px';
-            input.style.border = 'Transition';
-
-            // Thay thế nội dung của ô chứa tham số bằng phần tử input
-            element.innerHTML = '';
-            element.appendChild(input);
-
-                        
-            input.selectionStart = input.selectionEnd = input.value.length;
-            
-            // Xác định sự kiện khi người dùng kết thúc chỉnh sửa
-            input.addEventListener('blur', function() {
-                // Cập nhật giá trị
+        // Define event when the user finishes editing
+        input.addEventListener('blur', function(e) {
+            // Update value
+            if (parseInt(input.value.trim()) < 0) {
+                // Display error message if value is below 0
+        
+                alert("Error value: the input is below 0");
+            } else {
+              alert("Changes saved successfully!")
+                // If value is valid, update the parameter element
                 element.innerText = input.value.trim();
-            });
-            
-            
-            input.select();
-        }
+            }
+        });
+    
+        // Focus on the input field when editing starts
+        input.focus();
+    }
 
-        function saveChanges() {
-            // Đoạn mã để lưu các thay đổi vào máy chủ có thể được thêm ở đây
-            alert("Changes saved successfully!");
-        }
     </script>
 
 </body>

@@ -166,12 +166,12 @@
             </div>
             <div class="input-field">
               <label>Duration:</label>
-              <input type="text" placeholder="Enter duration" required />
+              <input min="0" max="30" type="text" placeholder="Enter duration" required />
             </div>
             <div class="input-field">
               <label>Prestige Class Number:</label>
               <input
-                type="number"
+                type="number" min="0"
                 placeholder="Enter the chair number of prestige class"
                 required
               />
@@ -180,7 +180,7 @@
             <div class="input-field">
               <label>Economy Class Number:</label>
               <input
-                type="number"
+                type="number" min="0"
                 placeholder="Enter the chair number of economy class"
                 required
               />
@@ -325,5 +325,54 @@
       </div>
     </main>
     <script src="/asses/js/adding.js"></script>
+    <script>
+      const inputFlight = document.querySelector('input[placeholder="Enter flight ID"]');
+      // plan ID ra mot selection lay tu csdl
+      const inputDuration = document.querySelector('input[placeholder="Enter duration"]');
+      const inputDateTime= document.querySelector('input[placeholder="Enter time and date"]');
+      const inputPrestige =document.querySelector('input[placeholder="Enter the chair number of prestige class"]');
+      const inputEconomy = document.querySelector('input[placeholder="Enter the chair number of economy class"]');
+
+  
+
+      inputEconomy.addEventListener('blur', function(e){
+        if (parseInt(inputEconomy.value.trim()) < 0) {
+          // Display error message if value is below 0
+          alert("Error value: the input is below 0");
+        } 
+      });
+      inputEconomy.focus();
+      inputPrestige.addEventListener('blur', function(e){
+        if (parseInt(inputPrestige.value.trim()) < 0) {
+          // Display error message if value is below 0
+          alert("Error value: the input is below 0");
+        } 
+      });
+      inputPrestige.focus();
+      inputDuration.addEventListener('blur', function(e){
+        if (parseInt(inputDuration.value.trim())<0 || parseInt(inputDuration.value.trim())>30){
+          alert("Error value: the input is below 0 or larger than specified parameters");}
+      });
+      inputDuration.focus();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const input = document.getElementById('inputDateTime');
+        const today = new Date();
+        const tomorrow = new Date(today);
+    
+        // Add 1 day to the current date
+        tomorrow.setDate(tomorrow.getDate() + 2);
+    
+        // Format the date as YYYY-MM-DDTHH:mm, which is the format required for datetime-local inputs
+        const minDate = tomorrow.toISOString().slice(0, 16);
+    
+        // Set the min attribute of the input to the formatted date
+        inputDateTime.min = minDate;
+    });
+
+
+
+    </script>
+
   </body>
 </html>
